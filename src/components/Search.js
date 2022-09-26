@@ -2,8 +2,8 @@ import React from 'react';
 
 const Search = () => {
     return (
-        <div>
-            <h1>hola mundo</h1>
+        <div id='conatainer-search'>
+            <h3>Search</h3>
         </div>
     );
 };
