@@ -1,7 +1,7 @@
 
 #navbar {
     font-size: 18px;
-    background-color: #E8E8E8;
+    background-color: var(--main-color);
     margin-top: 1.5rem;
     margin-left: 2rem;
     padding-top: 1rem;
@@ -21,7 +21,7 @@
 }
 
 #nav-container li {
-    color: #3F3F3F;
+    color: var(--text-color);
     margin-left: 0.5rem;
     list-style: none;
 }
@@ -33,6 +33,6 @@
     padding-left: 1rem;
 }
 
-i{  
+.item-container i{  
     color: var(--accent-color);
 }

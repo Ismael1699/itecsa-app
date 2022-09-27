@@ -15,12 +15,12 @@ const Navbar = () => {
                         <li>DashBoard</li>
                     </div>
                     <div className='item-container'>
-                        <i className='bi bi-book-fill'></i>
-                        <li>Estimaciones</li>
+                        <i className='bi bi-symmetry-vertical'></i>
+                        <li>Avance Diario</li>
                     </div>
                     <div className='item-container'>
-                        <i className='bi bi-symmetry-vertical'></i>
-                        <li>Larguillo avance</li>
+                        <i className='bi bi-book-fill'></i>
+                        <li>Estimaciones</li>
                     </div>
                     <div className='item-container'>
                         <i className='bi bi-fuel-pump-fill'></i>
