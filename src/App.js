@@ -1,4 +1,5 @@
 import React from 'react';
+import Content from './components/Content';
 import Navbar from './components/Navbar';
 import Search from './components/Search';
 
@@ -7,6 +8,7 @@ function App() {
         <div>
             <Navbar />
             <Search />
+            <Content />
         </div>
     );
 }

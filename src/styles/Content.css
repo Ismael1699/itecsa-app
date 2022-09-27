@@ -1,0 +1,8 @@
+#content-container {
+    width: 50%;
+    height: 30%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 5rem;
+    left: 17rem;
+}

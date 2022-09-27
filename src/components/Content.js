@@ -1,5 +1,8 @@
 import React from 'react';
+import '../styles/Content.css';
 
 const Content = () => {
-    return <div>hola mundo</div>;
+    return <div id='content-container'></div>;
 };
+
+export default Content;
