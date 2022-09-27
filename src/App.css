@@ -1,0 +1,40 @@
+#app-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#item-app-navbar{
+    margin: 0.4rem;
+    width: calc(20% - 0.8rem);
+    height: calc(100% - 0.8rem);
+    background-color: blueviolet;
+}
+
+#item-app-content{
+    margin: 0.4rem;
+    width: calc(80% - 0.8rem);
+    height: calc(100%  - 0.8rem);
+    background-color: darkcyan;
+}
+
+/*max-width se aplica hasta llegar a los 600px */
+@media screen and (max-width: 600px){
+    #app-container{
+        flex-direction: column;
+        
+        
+    }
+
+    #item-app-navbar{
+        width: calc(100% - 0.8rem);
+        height: calc(10% - 0.8rem);
+    }
+    #item-app-content{
+        width: calc(100% - 0.8rem);
+        height: calc(90% - 0.8rem);
+    }
+}
+@media screen and (min-width: 600px){
+
+}
