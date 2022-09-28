@@ -2,19 +2,22 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: flex-start;
 }
 
 #item-app-navbar{
-    margin: 0.4rem;
-    width: calc(20% - 0.8rem);
-    height: calc(100% - 0.8rem);
-    background-color: blueviolet;
+    width: 15.5rem;
+    min-width: 15.5rem;
+    height: 100%; 
+    
 }
 
 #item-app-content{
-    margin: 0.4rem;
-    width: calc(80% - 0.8rem);
-    height: calc(100%  - 0.8rem);
+    
+    width: auto;
+    width: 100%;
+    /* width: calc(100% - 0.8rem);
+    height: calc(100%  - 0.8rem); */
     background-color: darkcyan;
 }
 
@@ -27,14 +30,12 @@
     }
 
     #item-app-navbar{
-        width: calc(100% - 0.8rem);
-        height: calc(10% - 0.8rem);
+        background-color: blueviolet;
+        width: 100%;
+        height: 8%;
     }
     #item-app-content{
-        width: calc(100% - 0.8rem);
-        height: calc(90% - 0.8rem);
+        width: 100%;
+        height: 92%;
     }
-}
-@media screen and (min-width: 600px){
-
 }
