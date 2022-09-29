@@ -6,8 +6,8 @@ const NavbarMobile = () => {
     return (
         <div id='Navmobile-container'>
             <MenuMobile />
-            <p>Title</p>
-            <i className='bi bi-person-circle'></i>
+            <p>Home</p>
+            <i id='user-icon' className='bi bi-person-circle'></i>
         </div>
     );
 };
