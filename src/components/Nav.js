@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import NavbarMobile from './NavbarMobile';
-import NavbarWeb from './NavbarWeb';
+import NavWeb from './NavWeb';
 
 const Navbar = ({ displayWidth }) => {
-    return <>{displayWidth > 600 ? <NavbarWeb /> : <NavbarMobile />}</>;
+    return <>{displayWidth > 600 ? <NavWeb /> : <NavbarMobile />}</>;
 };
 
 export default Navbar;

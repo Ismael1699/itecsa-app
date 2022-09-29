@@ -1,18 +1,18 @@
-#app-container{
+#app{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: flex-start;
 }
 
-#item-app-navbar{
+#container-nav{
     width: 15.5rem;
     min-width: 15.5rem;
     height: 100%; 
     
 }
 
-#item-app-content{
+#container-section{
     background-color: blueviolet;
     width: auto;
     width: 100%;

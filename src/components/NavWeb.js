@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/NavbarWeb.css';
+import '../styles/NavWeb.css';
 
-const NavbarWeb = () => {
+const NavWeb = () => {
     return (
         <div id='navWeb-container'>
             <div className='item-container-web'>
@@ -28,4 +28,4 @@ const NavbarWeb = () => {
     );
 };
 
-export default NavbarWeb;
+export default NavWeb;
