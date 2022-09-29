@@ -19,7 +19,9 @@ function App() {
             <div id='item-app-navbar'>
                 <Navbar displayWidth={displayWidth} />
             </div>
-            <div id='item-app-content'></div>
+            <div id='item-app-content'>
+                <Search />
+            </div>
         </div>
     );
 }

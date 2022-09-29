@@ -13,18 +13,16 @@
 }
 
 #item-app-content{
-    
+    background-color: blueviolet;
     width: auto;
     width: 100%;
 
 }
-
+/* Esto es para la parte mobile */
 /*max-width se aplica hasta llegar a los 600px */
 @media screen and (max-width: 600px){
     #app-container{
         flex-direction: column;
-        
-        
     }
 
     #item-app-navbar{
