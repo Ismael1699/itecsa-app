@@ -21,16 +21,17 @@
 /* Esto es para la parte mobile */
 /*max-width se aplica hasta llegar a los 600px */
 @media screen and (max-width: 600px){
-    #app-container{
+    #app{
         flex-direction: column;
     }
-
-    #item-app-navbar{
+    #container-nav{
+        background-color: tomato;
         width: 100%;
-        height: 8%;
+        height: 12%;
     }
-    #item-app-content{
+    #container-section{
         width: 100%;
-        height: 92%;
+        height:88%;
+        background-color: brown;
     }
 }

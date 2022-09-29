@@ -21,7 +21,7 @@ function App() {
                 <Nav displayWidth={displayWidth} />
             </div>
             <div id='container-section'>
-                <Search />
+                {displayWidth > 600 ? <Search /> : <></>}
             </div>
         </div>
     );
