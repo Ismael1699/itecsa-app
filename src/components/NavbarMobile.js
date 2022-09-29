@@ -1,12 +1,13 @@
 import React from 'react';
 import MenuMobile from './MenuMobile';
+import '../styles/NavbarMobile.css';
 
 const NavbarMobile = () => {
     return (
-        <div id='NavMobile-container'>
+        <div id='Navmobile-container'>
             <MenuMobile />
             <p>Title</p>
-            <p>User</p>
+            <i className='bi bi-person-circle'></i>
         </div>
     );
 };
