@@ -1,4 +1,4 @@
-#nav-container {
+#navWeb-container {
     background-color: var(--main-color);
     margin: 1.4rem 1.7rem 1.4rem 1.7rem; 
     border-radius: 2rem;
@@ -10,13 +10,13 @@
     justify-content: space-around;
 }
 
-.item-container h1 {
+.item-container-web h1 {
     font-size: 18px;
     color: var(--text-color);
     margin-left: 0.5rem;
 }
 
-.item-container{
+.item-container-web{
     margin-left: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -24,13 +24,13 @@
     align-items: center;
 }
 
-.item-container i{ 
+.item-container-web i{ 
     color: var(--accent-color);
 }
 
 
 @media screen and (max-width: 600px){
-    #nav-container {
+    #navWeb-container {
             background-color: var(--main-color);
             margin: 0;
             border-radius: 0;

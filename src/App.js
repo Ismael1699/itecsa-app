@@ -6,10 +6,8 @@ import './App.css';
 
 function App() {
     const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
-    const [displayHeight, setDisplayHeight] = useState(window.innerHeight);
 
     const getDisplaySize = () => {
-        setDisplayHeight(window.innerHeight);
         setDisplayWidth(window.innerWidth);
     };
 
@@ -19,7 +17,7 @@ function App() {
     return (
         <div id='app-container'>
             <div id='item-app-navbar'>
-                <Navbar />
+                <Navbar displayWidth={displayWidth} />
             </div>
             <div id='item-app-content'></div>
         </div>
