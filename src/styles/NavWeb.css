@@ -1,4 +1,4 @@
-#navWeb-container {
+#navWeb {
     background-color: var(--main-color);
     margin: 1.4rem 1.7rem 1.4rem 1.7rem; 
     border-radius: 2rem;
@@ -10,13 +10,13 @@
     justify-content: space-around;
 }
 
-.item-container-web h1 {
+.item-web h1 {
     font-size: 18px;
     color: var(--text-color);
     margin-left: 0.5rem;
 }
 
-.item-container-web{
+.item-web{
     margin-left: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.item-container-web i{ 
+.item-web i{ 
     color: var(--accent-color);
 }
 
