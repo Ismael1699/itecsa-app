@@ -1,4 +1,4 @@
-#Navmobile-container {
+#Navmobile {
     background-color: var(--main-color);
     display:flex;
     flex-direction: row;
@@ -9,10 +9,6 @@
     border-radius: 3rem;
     box-shadow: -10px 8px 12px #0000003d;
 }
-
-
-
-
 
 #user-icon{
     color: var(--accent-color);
