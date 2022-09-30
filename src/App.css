@@ -24,13 +24,11 @@
         flex-direction: column;
     }
     #container-nav{
-        background-color: tomato;
         width: 100%;
-        height: 12%;
+        height: auto;
     }
     #container-section{
         width: 100%;
         height:88%;
-        background-color: brown;
     }
 }
