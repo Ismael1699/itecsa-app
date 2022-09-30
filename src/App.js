@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Content from './components/Content';
 import Nav from './components/Nav';
-import Search from './components/Search';
 import './App.css';
+import TopBarWeb from './components/TopBarWeb';
 
 function App() {
     const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
@@ -21,7 +21,8 @@ function App() {
                 <Nav displayWidth={displayWidth} />
             </div>
             <div id='container-section'>
-                {displayWidth > 600 ? <Search /> : <></>}
+                {displayWidth > 600 ? <TopBarWeb /> : <></>}
+                <Content />
             </div>
         </div>
     );
