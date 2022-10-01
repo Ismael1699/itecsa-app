@@ -1,31 +1,37 @@
 import React from 'react';
 import '../styles/NavWeb.css';
 
-const NavWeb = () => {
-    return (
-        <div id='navWeb'>
-            <div className='item-web'>
-                <i className='bi bi-house-fill'></i>
-                <h1>Home</h1>
-            </div>
-            <div className='item-web'>
-                <i className='bi bi-grid-1x2-fill'></i>
-                <h1>DashBoard</h1>
-            </div>
-            <div className='item-web'>
-                <i className='bi bi-symmetry-vertical'></i>
-                <h1>Avance Diario</h1>
-            </div>
-            <div className='item-web'>
-                <i className='bi bi-book-fill'></i>
-                <h1>Estimaciones</h1>
-            </div>
-            <div className='item-web'>
-                <i className='bi bi-fuel-pump-fill'></i>
-                <h1>Cargas diésel</h1>
-            </div>
-        </div>
-    );
+const NavWeb = ({
+	homePage,
+	dashBoardPage,
+	avancePage,
+	estimacionesPage,
+	dieselPage,
+}) => {
+	return (
+		<div id='navWeb'>
+			<button className='item-web' type='button' onClick={homePage}>
+				<i className='bi bi-house-fill'></i>
+				<h1>Home</h1>
+			</button>
+			<button className='item-web' onClick={dashBoardPage}>
+				<i className='bi bi-grid-1x2-fill'></i>
+				<h1>DashBoard</h1>
+			</button>
+			<button className='item-web' onClick={avancePage}>
+				<i className='bi bi-symmetry-vertical'></i>
+				<h1>Avance Diario</h1>
+			</button>
+			<button className='item-web' onClick={estimacionesPage}>
+				<i className='bi bi-book-fill'></i>
+				<h1>Estimaciones</h1>
+			</button>
+			<button className='item-web' onClick={dieselPage}>
+				<i className='bi bi-fuel-pump-fill'></i>
+				<h1>Cargas diésel</h1>
+			</button>
+		</div>
+	);
 };
 
 export default NavWeb;
