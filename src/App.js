@@ -12,26 +12,29 @@ function App() {
 		setDisplayWidth(window.innerWidth);
 	};
 
-	const homePage = (e) => {
+	const homePage = () => {
 		setLoadPage('Home');
-		console.log('home page');
+		console.log(loadPage);
 	};
 
 	const dashBoardPage = () => {
 		setLoadPage('Dashboard');
-		console.log('DashBoard');
+		console.log(loadPage);
 	};
 
 	const avancePage = () => {
 		setLoadPage('Avance');
+		console.log(loadPage);
 	};
 
 	const estimacionesPage = () => {
 		setLoadPage('Estimaciones');
+		console.log(loadPage);
 	};
 
 	const dieselPage = () => {
 		setLoadPage('Diesel');
+		console.log(loadPage);
 	};
 
 	//Con este useEffect se obtine el ancho de la pantalla en todo el tiempo de ejecución del proyecto

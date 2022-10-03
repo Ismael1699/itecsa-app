@@ -1,0 +1,46 @@
+#container-allDisplay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+
+}
+
+/* #container-DropDown{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(218, 218, 218, 0.315);
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+
+#container-rest{
+    width: 50%;
+    height: 100%;
+}
+
+.item-mobile{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+}
+
+.item-mobile i {
+    margin: 0 1rem 0 1rem;
+}
+
+.item-mobile h1 {
+    font-size: 23px;
+    color: var(--text-color);
+}

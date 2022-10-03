@@ -21,7 +21,13 @@ const Nav = ({
 					dieselPage={dieselPage}
 				/>
 			) : (
-				<NavMobile />
+				<NavMobile
+					homePage={homePage}
+					dashBoardPage={dashBoardPage}
+					avancePage={avancePage}
+					estimacionesPage={estimacionesPage}
+					dieselPage={dieselPage}
+				/>
 			)}
 		</>
 	);
