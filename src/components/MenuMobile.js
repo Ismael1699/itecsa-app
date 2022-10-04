@@ -12,22 +12,20 @@ const MenuMobile = ({
 }) => {
 	return (
 		<div id='menumobile-container'>
-			{menuButtonState ? (
-				<MenuMobileDropDown
-					homePage={homePage}
-					dashBoardPage={dashBoardPage}
-					avancePage={avancePage}
-					estimacionesPage={estimacionesPage}
-					dieselPage={dieselPage}
-					toggleMenuButton={toggleMenuButton}
-				/>
-			) : (
-				<i
-					id='menu-icon'
-					className='bi bi-three-dots'
-					onClick={toggleMenuButton}
-				></i>
-			)}
+			<MenuMobileDropDown
+				homePage={homePage}
+				dashBoardPage={dashBoardPage}
+				avancePage={avancePage}
+				estimacionesPage={estimacionesPage}
+				dieselPage={dieselPage}
+				toggleMenuButton={toggleMenuButton}
+				menuButtonState={menuButtonState}
+			/>
+			<i
+				id='menu-icon'
+				className='bi bi-three-dots'
+				onClick={toggleMenuButton}
+			></i>
 		</div>
 	);
 };
