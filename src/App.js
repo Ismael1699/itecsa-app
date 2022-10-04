@@ -51,6 +51,7 @@ function App() {
 					avancePage={avancePage}
 					estimacionesPage={estimacionesPage}
 					dieselPage={dieselPage}
+					loadPage={loadPage}
 				/>
 			</div>
 			<div id='container-section'>

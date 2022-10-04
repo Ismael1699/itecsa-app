@@ -9,6 +9,7 @@ const NavMobile = ({
 	avancePage,
 	estimacionesPage,
 	dieselPage,
+	loadPage,
 }) => {
 	const [menuButtonState, setMenuButtonState] = useState(false);
 
@@ -27,7 +28,7 @@ const NavMobile = ({
 				menuButtonState={menuButtonState}
 				toggleMenuButton={toggleMenuButton}
 			/>
-			<p>Home</p>
+			<p>{loadPage}</p>
 			<i id='user-icon' className='bi bi-person-circle'></i>
 		</div>
 	);
