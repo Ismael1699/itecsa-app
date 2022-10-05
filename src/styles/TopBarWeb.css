@@ -1,30 +1,31 @@
 #container-topbarweb{
+    height: 10%;
+    width: 100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin:1.2rem;
 }
 
 #container-user-setting {
     display: flex;
-
+    width: 10rem;
+    justify-content: space-around;
+    
 }
 
 .box-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0.8rem 0 0.8rem;
     border-radius: 50%;
     width: 2.2rem;
     height: 2.2rem;
     background-color: var(--main-color);
     box-shadow: -5px 4px 6px #0000003d;
-
+    
 }
 
 #container-user-setting i {
-    
     font-size: 25px;
     color: var(--accent-color);
 }
