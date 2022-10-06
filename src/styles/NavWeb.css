@@ -1,10 +1,9 @@
 #navWeb {
-    background-color: var(--main-color);
-    margin: 1.4rem 1.7rem 1.4rem 1.7rem; 
-    border-radius: 2rem;
-    width: calc(100% - 3.4rem);
-    height: calc(100% - 2.8rem);
-    box-shadow: -10px 8px 12px #0000003d;
+    background: #FFED4D;
+    margin-right: 2rem;
+    width: calc(100% - 2rem) ;
+    height: 100% ;
+    border-radius: 0  20px 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -14,6 +13,7 @@
     font-size: 18px;
     color: var(--text-color);
     margin-left: 0.5rem;
+
 }
 
 .item-web{

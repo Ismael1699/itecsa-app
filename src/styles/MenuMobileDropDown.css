@@ -14,7 +14,7 @@
 #container-DropDown{
     width: 50%;
     height: 100%;
-    background-color: rgba(231, 231, 231, 0.712);
+    background-color: var(--main-color);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;

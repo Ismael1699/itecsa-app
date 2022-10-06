@@ -11,6 +11,7 @@ const ContainerAllDisplay = styled.div`
 		left: -100vw;
 		display: flex;
 		transition: left 0.8s;
+		z-index: 1;
 	}
 	.actived {
 		left: 0;

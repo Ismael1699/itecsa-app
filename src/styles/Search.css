@@ -6,7 +6,7 @@
     background-color: var(--main-color);
     border-radius: 1rem;
     color: var(--text-color);
-    box-shadow: -5px 4px 6px #0000003d;
+    box-shadow: var(--color-shadow);
     display: flex;
     align-items: center;
 }

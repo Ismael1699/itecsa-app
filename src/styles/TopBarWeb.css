@@ -21,7 +21,7 @@
     width: 2.2rem;
     height: 2.2rem;
     background-color: var(--main-color);
-    box-shadow: -5px 4px 6px #0000003d;
+    box-shadow: var(--color-shadow);
     
 }
 

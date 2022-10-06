@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E8F0FF;
 }
 
 code {
@@ -18,7 +19,10 @@ code {
 }
 
 :root {
-  --accent-color: #631313;
-  --main-color: #E8E8E8;
-  --text-color: #6d6d6d;
+  /* #631313 */
+  /* #E8E8E8 */
+  --accent-color:#675900;
+  --main-color: #e2eb94;
+  --text-color: #675900;
+  --color-shadow:0;
 }

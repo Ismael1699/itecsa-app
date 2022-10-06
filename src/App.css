@@ -1,8 +1,11 @@
 #app{
+    
     width: 100vw;
     height: 100vh;
     display: flex; 
     justify-content: flex-start;
+    background-color: #F2FEDC;
+
 }
 
 #container-nav{
