@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/NavWeb.css';
+import user from '../img/user.jpeg';
 
 const NavWeb = ({
 	homePage,
@@ -10,6 +11,12 @@ const NavWeb = ({
 }) => {
 	return (
 		<div id='navWeb'>
+			<div className='photo-user'>
+				<div className='container-photo'>
+					<img src={user}></img>
+				</div>
+				<h1>Ismael Sarmiento</h1>
+			</div>
 			<button className='item-web' type='button' onClick={homePage}>
 				<i className='bi bi-house-fill'></i>
 				<h1>Home</h1>
