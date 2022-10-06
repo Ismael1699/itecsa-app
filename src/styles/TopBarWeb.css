@@ -20,7 +20,7 @@
     border-radius: 50%;
     width: 2.2rem;
     height: 2.2rem;
-    background-color: var(--main-color);
+    background-color: var(--secundary-color);
     box-shadow: var(--color-shadow);
     
 }

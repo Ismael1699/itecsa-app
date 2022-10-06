@@ -1,5 +1,5 @@
 #Navmobile {
-    background-color: var(--main-color);
+    background-color: var(--secundary-color);
     display:flex;
     flex-direction: row;
     justify-content: space-between;

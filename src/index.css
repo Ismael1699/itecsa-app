@@ -19,10 +19,9 @@ code {
 }
 
 :root {
-  /* #631313 */
-  /* #E8E8E8 */
   --accent-color:#675900;
-  --main-color: #e2eb94;
+  --main-color:#FFED4D; 
   --text-color: #675900;
+  --secundary-color: #e2eb94;
   --color-shadow:0;
 }

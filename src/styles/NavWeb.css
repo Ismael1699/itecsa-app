@@ -1,5 +1,5 @@
 #navWeb {
-    background: #FFED4D;
+    background: var(--main-color);
     margin-right: 2rem;
     width: calc(100% - 2rem) ;
     height: 100% ;
