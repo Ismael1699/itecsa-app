@@ -1,6 +1,7 @@
 
 
 #menu-icon{
+    margin-left: 1.5rem;
     font-size: 30px;
     font-weight: 20px;
     color: var(--accent-color);
