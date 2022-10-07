@@ -23,11 +23,12 @@
 
     font-family: Raleway, Arial, sans-serif;
     color: white;
-    font-size: 72px;
-    letter-spacing: 1.5rem;
+    font-size: 30px;
+    letter-spacing: 1rem;
     font-weight: 300;
     line-height: 1.5;
     text-shadow: -5px 10px 13px rgb(0, 0, 0);
+    overflow: hidden;
 
 }
 
