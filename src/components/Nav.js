@@ -20,6 +20,7 @@ const Nav = ({
 					avancePage={avancePage}
 					estimacionesPage={estimacionesPage}
 					dieselPage={dieselPage}
+					loadPage={loadPage}
 				/>
 			) : (
 				<NavMobile

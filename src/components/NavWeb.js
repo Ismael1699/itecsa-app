@@ -8,6 +8,7 @@ const NavWeb = ({
 	avancePage,
 	estimacionesPage,
 	dieselPage,
+	loadPage,
 }) => {
 	return (
 		<div id='navWeb'>
@@ -17,7 +18,11 @@ const NavWeb = ({
 				</div>
 				<h1>Ismael Sarmiento</h1>
 			</div>
-			<button className='item-web' type='button' onClick={homePage}>
+			<button
+				className={loadPage === 'Home' ? 'item-focus' : 'item-web'}
+				type='button'
+				onClick={homePage}
+			>
 				<i className='bi bi-house-fill'></i>
 				<h1>Home</h1>
 			</button>

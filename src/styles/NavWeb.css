@@ -42,7 +42,7 @@
     
 }
 
-.item-web h1 {
+button h1 {
     font-size: 16px;
     color: var(--text-color);
     margin-left: 0.5rem;
@@ -64,6 +64,23 @@
     overflow: visible;
 }
 
-.item-web i{ 
+button i{ 
     color: var(--accent-color);
+}
+
+.item-focus{
+    margin-top: 5%;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    align-items: center;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    background-color: #F2FEDC;
+    border-radius: 20px 0 0 20px;
 }
