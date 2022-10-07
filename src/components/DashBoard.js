@@ -78,7 +78,7 @@ const DashBoard = () => {
 				<h2>Estimaciones</h2>
 			</div>
 			<div id='dash-diesel' className='dash-item'>
-				<h2>Diesel</h2>
+				<h2>Diésel</h2>
 			</div>
 			<div id='dash-maquinaria' className='dash-item'>
 				<h2>Maquinaria</h2>

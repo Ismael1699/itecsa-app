@@ -1,5 +1,6 @@
 #Navmobile {
-    background-color: var(--secundary-color);
+    background: var(--main-color);
+    background-image: linear-gradient(90deg, var(--main-color) 0%, #e9d732 100%);
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +10,7 @@
     width: calc(100% - 1.2rem);
     margin: 0.6rem;
     border-radius: 3rem;
-    box-shadow: -10px 8px 12px #0000003d;
+    /* box-shadow: -10px 8px 12px #0000003d; */
 }
 
     .img-navmobile{
