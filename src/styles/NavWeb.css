@@ -62,6 +62,7 @@ button h1 {
     font: inherit;
     line-height: normal;
     overflow: visible;
+    cursor:pointer;
 }
 
 button i{ 
@@ -70,7 +71,7 @@ button i{
 
 .item-focus{
     margin-top: 5%;
-    margin-left: 2rem;
+    margin-left: 4rem;
     display: flex;
     flex-direction: row;
     padding-left: 1rem;
@@ -83,7 +84,7 @@ button i{
     overflow: visible;
     background-color: #F2FEDC;
     border-radius: 20px 0 0 20px;
+    transition: all 0.5s;
 }
-
 
 

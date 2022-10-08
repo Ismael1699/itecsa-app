@@ -19,9 +19,7 @@ const NavWeb = ({
 				<h1>Ismael Sarmiento</h1>
 			</div>
 			<button
-				className={
-					loadPage === 'Home' ? 'item-focus adorno-focus' : 'item-web'
-				}
+				className={loadPage === 'Home' ? 'item-focus' : 'item-web'}
 				type='button'
 				onClick={homePage}
 			>
