@@ -18,45 +18,74 @@ const NavWeb = ({
 				</div>
 				<h1>Ismael Sarmiento</h1>
 			</div>
-			<button
-				className={loadPage === 'Home' ? 'item-focus' : 'item-web'}
-				type='button'
-				onClick={homePage}
-			>
-				<i className='bi bi-house-fill'></i>
-				<h1>Home</h1>
-			</button>
-			<button
-				className={loadPage === 'Dashboard' ? 'item-focus' : 'item-web'}
-				onClick={dashBoardPage}
-				type='button'
-			>
-				<i className='bi bi-grid-1x2-fill'></i>
-				<h1>DashBoard</h1>
-			</button>
-			<button
-				className={loadPage === 'Avance' ? 'item-focus' : 'item-web'}
-				onClick={avancePage}
-			>
-				<i className='bi bi-symmetry-vertical'></i>
-				<h1>Avance Diario</h1>
-			</button>
-			<button
-				className={
-					loadPage === 'Estimaciones' ? 'item-focus' : 'item-web'
-				}
-				onClick={estimacionesPage}
-			>
-				<i className='bi bi-book-fill'></i>
-				<h1>Estimaciones</h1>
-			</button>
-			<button
-				className={loadPage === 'Diesel' ? 'item-focus' : 'item-web'}
-				onClick={dieselPage}
-			>
-				<i className='bi bi-fuel-pump-fill'></i>
-				<h1>Cargas diésel</h1>
-			</button>
+			<div className='item-web' onClick={homePage}>
+				<div
+					className={`icon-and-text-container ${
+						loadPage === 'Home' ? 'press-on' : ''
+					}`}
+				>
+					<i className='bi bi-house-fill'></i>
+					<h1>Home</h1>
+				</div>
+				<div className={loadPage === 'Home' ? 'cur-top' : ''}></div>
+				<div className={loadPage === 'Home' ? 'cur-bot' : ''}></div>
+			</div>
+			<div className='item-web' onClick={dashBoardPage}>
+				<div
+					className={`icon-and-text-container ${
+						loadPage === 'Dashboard' ? 'press-on' : ''
+					}`}
+				>
+					<i className='bi bi-grid-1x2-fill'></i>
+					<h1>DashBoard</h1>
+				</div>
+				<div
+					className={loadPage === 'Dashboard' ? 'cur-top' : ''}
+				></div>
+				<div
+					className={loadPage === 'Dashboard' ? 'cur-bot' : ''}
+				></div>
+			</div>
+			<div className='item-web' onClick={avancePage}>
+				<div
+					className={`icon-and-text-container ${
+						loadPage === 'Avance' ? 'press-on' : ''
+					}`}
+				>
+					<i className='bi bi-symmetry-vertical'></i>
+					<h1>Avance Diario</h1>
+				</div>
+				<div className={loadPage === 'Avance' ? 'cur-top' : ''}></div>
+				<div className={loadPage === 'Avance' ? 'cur-bot' : ''}></div>
+			</div>
+			<div className='item-web' onClick={estimacionesPage}>
+				<div
+					className={`icon-and-text-container ${
+						loadPage === 'Estimaciones' ? 'press-on' : ''
+					}`}
+				>
+					<i className='bi bi-book-fill'></i>
+					<h1>Estimaciones</h1>
+				</div>
+				<div
+					className={loadPage === 'Estimaciones' ? 'cur-top' : ''}
+				></div>
+				<div
+					className={loadPage === 'Estimaciones' ? 'cur-bot' : ''}
+				></div>
+			</div>
+			<div className='item-web' onClick={dieselPage}>
+				<div
+					className={`icon-and-text-container ${
+						loadPage === 'Diesel' ? 'press-on' : ''
+					}`}
+				>
+					<i className='bi bi-fuel-pump-fill'></i>
+					<h1>Cargas diésel</h1>
+				</div>
+				<div className={loadPage === 'Diesel' ? 'cur-top' : ''}></div>
+				<div className={loadPage === 'Diesel' ? 'cur-bot' : ''}></div>
+			</div>
 		</div>
 	);
 };

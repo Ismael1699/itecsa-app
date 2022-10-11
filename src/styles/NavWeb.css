@@ -1,15 +1,19 @@
+
+/* main container */
 #navWeb {
     background: var(--main-color);
-    background-image: linear-gradient(180deg, var(--main-color) 0%, #cfbf2a 100%);
+    /* background-image: linear-gradient(180deg, var(--main-color) 0%, #cfbf2a 100%); */
     margin-right: 2rem;
     width: calc(100% - 2rem) ;
     height: 100% ;
-    border-radius: 0  30px 30px 0;
+    border-radius: 0  15px 15px 0;
     display: flex;
     flex-direction: column;
     
+    
 }
 
+/* secction profile */
 .photo-user{
     width: 100%;
     height: 25%;
@@ -42,34 +46,95 @@
     
 }
 
-button h1 {
-    font-size: 16px;
-    color: var(--text-color);
-    margin-left: 0.5rem;
+/* ------------------------------------- */
+/* estatic values the styles to elements in the navbar */
 
-}
-
-.item-web{
-    margin-top: 5%;
-    margin-left: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    padding-left: 1rem;
-    align-items: center;
-    background: none;
-    border: 0;
-    color: inherit;
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
+.item-web{ 
+    
+    height: 70px;
+    padding-left: 2rem;
     cursor:pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.2fr;
+    grid-template-rows: 1.2fr 1fr 1.2fr;
+    grid-template-areas:
+        ". . cur-top"
+        "icon-and-text-container icon-and-text-container icon-and-text-container"
+        ". . cur-bot";
+}
+    
+.icon-and-text-container{
+    grid-area: icon-and-text-container;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
 }
 
-button i{ 
+.icon-and-text-container i {
     color: var(--accent-color);
+    
+}
+    
+.icon-and-text-container h1{
+    font-size: 15px;
+    margin-left: 0.8rem;
+    color: var(--text-color);
 }
 
-.item-focus{
+
+.press-on{
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+}
+
+
+.cur-top{
+    grid-area: cur-top;
+    height:100%;
+    width: 100%;
+    background-color:#F2FEDC;
+    
+
+}
+.cur-top::after{
+    content: "";
+    display: block;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 0 0 100% 0;
+
+}
+
+.cur-bot{
+    grid-area: cur-bot;
+    height: 100%;
+    width: 100%;
+    background-color:#F2FEDC;
+}
+
+.cur-bot::after {
+    content: "";
+    display: block;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 0 100% 0 0;
+
+}
+
+
+
+.press-on {
+    background-color: #F2FEDC;
+    border-radius: 20px 0 0 20px;
+}
+
+/* .item-focus{
     margin-top: 5%;
     margin-left: 4rem;
     display: flex;
@@ -85,6 +150,4 @@ button i{
     background-color: #F2FEDC;
     border-radius: 20px 0 0 20px;
     transition: all 0.5s;
-}
-
-
+} */
