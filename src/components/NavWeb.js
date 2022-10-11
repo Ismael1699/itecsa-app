@@ -20,9 +20,11 @@ const NavWeb = ({
 			</div>
 			<div className='item-web' onClick={homePage}>
 				<div
-					className={`icon-and-text-container ${
-						loadPage === 'Home' ? 'press-on' : ''
-					}`}
+					className={
+						loadPage === 'Home'
+							? 'press-on'
+							: 'icon-and-text-container'
+					}
 				>
 					<i className='bi bi-house-fill'></i>
 					<h1>Home</h1>
