@@ -29,8 +29,12 @@ const NavWeb = ({
 					<i className='bi bi-house-fill'></i>
 					<h1>Home</h1>
 				</div>
-				<div className={loadPage === 'Home' ? 'cur-top' : ''}></div>
-				<div className={loadPage === 'Home' ? 'cur-bot' : ''}></div>
+				<div
+					className={loadPage === 'Home' ? 'cur-top' : 'cur-top-off'}
+				></div>
+				<div
+					className={loadPage === 'Home' ? 'cur-bot' : 'cur-bot-off'}
+				></div>
 			</div>
 			<div className='item-web' onClick={dashBoardPage}>
 				<div
