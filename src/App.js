@@ -6,34 +6,34 @@ import TopBarWeb from './components/TopBarWeb';
 
 function App() {
 	const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
-	const [loadPage, setLoadPage] = useState('Home');
+	const [loadPage, setLoadPage] = useState('home');
 
 	const getDisplaySize = () => {
 		setDisplayWidth(window.innerWidth);
 	};
 
 	const homePage = () => {
-		setLoadPage('Home');
+		setLoadPage('home');
 		console.log(loadPage);
 	};
 
 	const dashBoardPage = () => {
-		setLoadPage('Dashboard');
+		setLoadPage('dashboard');
 		console.log(loadPage);
 	};
 
 	const avancePage = () => {
-		setLoadPage('Avance');
+		setLoadPage('avance');
 		console.log(loadPage);
 	};
 
 	const estimacionesPage = () => {
-		setLoadPage('Estimaciones');
+		setLoadPage('estimaciones');
 		console.log(loadPage);
 	};
 
 	const dieselPage = () => {
-		setLoadPage('Diesel');
+		setLoadPage('diesel');
 		console.log(loadPage);
 	};
 

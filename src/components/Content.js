@@ -11,11 +11,11 @@ const Content = ({ loadPage }) => {
 		<div id='content-container'>
 			{
 				{
-					Home: <Home />,
-					Dashboard: <DashBoard />,
-					Avance: <Avance />,
-					Estimaciones: <Estimaciones />,
-					Diesel: <Diesel />,
+					home: <Home />,
+					dashboard: <DashBoard />,
+					avance: <Avance />,
+					estimaciones: <Estimaciones />,
+					diesel: <Diesel />,
 				}[loadPage]
 			}
 		</div>
