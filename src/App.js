@@ -7,6 +7,30 @@ import TopBarWeb from './components/TopBarWeb';
 function App() {
 	const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
 	const [loadPage, setLoadPage] = useState('home');
+	const [areaNamesData, setAreaNamesData] = useState([
+		'home',
+		'hola',
+		'hora',
+		'hay',
+		'dashboard',
+		'day',
+		'daily',
+		'derevil',
+		'dos',
+		'avance',
+		'abra',
+		'avanlo',
+		'avion',
+		'avioacion',
+		'estimaciones',
+		'eso',
+		'esos',
+		'esontato',
+		'diesel',
+		'dia',
+		'dialorgar',
+		'diatono',
+	]);
 
 	const getDisplaySize = () => {
 		setDisplayWidth(window.innerWidth);
