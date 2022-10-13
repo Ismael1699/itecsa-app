@@ -38,32 +38,26 @@ function App() {
 
 	const homePage = () => {
 		setLoadPage('home');
-		console.log(loadPage);
 	};
 
 	const dashBoardPage = () => {
 		setLoadPage('dashboard');
-		console.log(loadPage);
 	};
 
 	const avancePage = () => {
 		setLoadPage('avance');
-		console.log(loadPage);
 	};
 
 	const estimacionesPage = () => {
 		setLoadPage('estimaciones');
-		console.log(loadPage);
 	};
 
 	const dieselPage = () => {
 		setLoadPage('diesel');
-		console.log(loadPage);
 	};
 
 	const handleSearch = (e) => {
 		e.preventDefault();
-		console.log('se envio');
 	};
 
 	//Con este useEffect se obtine el ancho de la pantalla en todo el tiempo de ejecución del proyecto

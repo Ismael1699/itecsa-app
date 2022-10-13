@@ -9,7 +9,6 @@ const Search = ({ areaNamesData, handleSearch }) => {
 
 	const handleChange = (e) => {
 		setValue(e.target.value);
-		console.log(e.target);
 	};
 
 	const hadleFocus = () => {
