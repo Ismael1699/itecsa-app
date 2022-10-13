@@ -3,10 +3,11 @@
     width: 100%;
     display:flex;
     justify-content: space-around;
-    align-items: center;
+    
 }
 
 #container-user-setting {
+    margin-top: 0.8rem;
     display: flex;
     width: 10rem;
     justify-content: space-around;
@@ -22,7 +23,6 @@
     height: 2.2rem;
     background-color: var(--secundary-color);
     box-shadow: var(--color-shadow);
-    
 }
 
 #container-user-setting i {

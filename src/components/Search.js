@@ -1,27 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Search.css';
+import SuggestList from './SuggestList';
 
 const Search = ({ areaNamesData, handleSearch }) => {
 	const [value, setValue] = useState('');
-	const [filterData, setFilterData] = useState({});
+	const [filterData, setFilterData] = useState([]);
+	const [isFocus, setIsFocus] = useState(false);
 
 	const handleChange = (e) => {
 		setValue(e.target.value);
+		console.log(e.target);
+	};
+
+	const hadleFocus = () => {
+		setIsFocus(true);
+	};
+
+	const handleBlur = () => {
+		setIsFocus(false);
 	};
 
 	useEffect(() => {
 		const valueLowerCase = value.toLowerCase();
 		const arrayFilter = areaNamesData.filter((item) => {
-			if (valueLowerCase === '') {
-				return item;
-			} else {
-				return item.includes(valueLowerCase);
-			}
+			return valueLowerCase === ''
+				? false
+				: item.includes(valueLowerCase);
 		});
 
-		console.log(arrayFilter);
+		setFilterData(arrayFilter);
 	}, [value, areaNamesData]);
-
 	return (
 		<form
 			id='container-search'
@@ -31,15 +39,19 @@ const Search = ({ areaNamesData, handleSearch }) => {
 				setValue('');
 			}}
 		>
-			<input
-				type='text'
-				id='input-search'
-				placeholder='¿A dónde quieres ir?'
-				value={value}
-				onChange={handleChange}
-			></input>
-			{/* <h1>Search</h1> */}
-			<i className='bi bi-search'></i>
+			<div id='hola'>
+				<input
+					type='text'
+					id='input-search'
+					placeholder='¿A dónde quieres ir?'
+					value={value}
+					onChange={handleChange}
+					onFocus={hadleFocus}
+					onBlur={handleBlur}
+				></input>
+				<i className='bi bi-search'></i>
+			</div>
+			{isFocus ? <SuggestList filterData={filterData} /> : ''}
 		</form>
 	);
 };

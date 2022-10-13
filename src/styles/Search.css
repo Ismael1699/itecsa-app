@@ -1,12 +1,22 @@
 #container-search{
     font-size: 12px;
-    padding-left: 0.8rem;
     width: 70%;
-    height: 2rem;
+    height: fit-content;
+    padding: 0.3rem;
+    margin-top: 1rem;
     background-color: var(--secundary-color);
     border-radius: 1rem;
     color: var(--text-color);
-    box-shadow: var(--color-shadow);
+    display: flex;
+    flex-direction: column;
+    border: 1px var(--border-color) solid;
+    position: relative;
+    z-index: 3;
+}
+
+#hola{
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +24,7 @@
 
 
 
-#container-search input {
+#hola input {
     margin-left: 0.3rem;
     font-size: 12px;
     background:none;
@@ -27,7 +37,7 @@
 }
 
 
-#container-search i{
+#hola i{
     margin-right: 0.8rem;
     font-size: 17px;
     color: var(--accent-color);
