@@ -1,25 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Search.css';
 
-const Search = ({ handleSearch }) => {
+const Search = ({ areaNamesData, handleSearch }) => {
 	const [value, setValue] = useState('');
+	const [filterData, setFilterData] = useState({});
 
 	const handleChange = (e) => {
 		setValue(e.target.value);
 	};
 
-	const dontRefresh = (e) => {
-		e.preventDefault();
-		setValue('');
-		console.log('se envio los datos');
-	};
+	useEffect(() => {
+		const valueLowerCase = value.toLowerCase();
+		const arrayFilter = areaNamesData.filter((item) => {
+			if (valueLowerCase === '') {
+				return item;
+			} else {
+				return item.includes(valueLowerCase);
+			}
+		});
+
+		console.log(arrayFilter);
+	}, [value, areaNamesData]);
 
 	return (
 		<form
 			id='container-search'
+			autoComplete='off'
 			onSubmit={(e) => {
-				dontRefresh(e);
-				handleSearch(value);
+				handleSearch(e);
+				setValue('');
 			}}
 		>
 			<input

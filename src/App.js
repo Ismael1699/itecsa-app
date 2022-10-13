@@ -61,9 +61,9 @@ function App() {
 		console.log(loadPage);
 	};
 
-	const handleSearch = (value) => {
-		const valueToLowerCase = value.toLowerCase();
-		console.log(valueToLowerCase);
+	const handleSearch = (e) => {
+		e.preventDefault();
+		console.log('se envio');
 	};
 
 	//Con este useEffect se obtine el ancho de la pantalla en todo el tiempo de ejecución del proyecto
@@ -85,7 +85,10 @@ function App() {
 			</div>
 			<div id='container-section'>
 				{displayWidth > 600 ? (
-					<TopBarWeb handleSearch={handleSearch} />
+					<TopBarWeb
+						areaNamesData={areaNamesData}
+						handleSearch={handleSearch}
+					/>
 				) : (
 					<></>
 				)}
