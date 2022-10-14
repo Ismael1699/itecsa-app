@@ -10,10 +10,13 @@
     flex-direction: column;
     position: relative;
     z-index: 3;
+    box-shadow: -10px 10px 18px 0px #a0a0a036;
 }
 
 .search-show{
     height: fit-content;
+    /* box-shadow: -10px 14px 39px 0px rgba(168, 166, 168, 0.72); */
+    
 }
 
 .search-hidde{
