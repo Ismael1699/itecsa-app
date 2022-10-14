@@ -31,9 +31,9 @@ const Search = ({ areaNamesData, handleSearch }) => {
 				? false
 				: item.includes(valueLowerCase);
 		});
-
 		setFilterData(arrayFilter);
 	}, [value, areaNamesData]);
+
 	return (
 		<form
 			className={`container-search ${
@@ -45,10 +45,10 @@ const Search = ({ areaNamesData, handleSearch }) => {
 				setValue('');
 			}}
 		>
-			<div id='hola'>
+			<div className='container-input'>
 				<input
 					type='text'
-					id='input-search'
+					className='input-search'
 					placeholder='¿A dónde quieres ir?'
 					value={value}
 					onChange={handleChange}

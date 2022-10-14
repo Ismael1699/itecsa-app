@@ -1,7 +1,6 @@
 .container-search{
     font-size: 12px;
     width: 70%;
-    
     padding: 0.3rem;
     margin-top: 1rem;
     background-color: var(--secundary-color);
@@ -9,7 +8,6 @@
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    border: 1px var(--border-color) solid;
     position: relative;
     z-index: 3;
 }
@@ -19,12 +17,11 @@
 }
 
 .search-hidde{
-    
     height: 20px;
 }
 
 
-#hola{
+.container-input{
     width: 100%;
     height: auto;
     display: flex;
@@ -34,7 +31,9 @@
 
 
 
-#hola input {
+.input-search {
+    color: var(--text-color);
+    font-style: italic;
     margin-left: 0.3rem;
     font-size: 12px;
     background:none;
@@ -47,7 +46,7 @@
 }
 
 
-#hola i{
+.container-input i{
     margin-right: 0.8rem;
     font-size: 17px;
     color: var(--accent-color);

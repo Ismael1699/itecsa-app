@@ -4,7 +4,7 @@ import '../styles/SuggestList.css';
 const SuggestList = ({ filterData, handleLink, isFocus, value }) => {
 	return (
 		<>
-			<ul>
+			<ul className='container-ul'>
 				{filterData.length === 0 && isFocus && value.length > 0 ? (
 					<li>not found</li>
 				) : (
