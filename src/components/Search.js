@@ -19,6 +19,12 @@ const Search = ({ areaNamesData, handleSearch }) => {
 		setIsFocus(false);
 	};
 
+	const handleLink = (e) => {
+		const content = e.target.text;
+		console.log('se presiono');
+		setValue('');
+	};
+
 	useEffect(() => {
 		const valueLowerCase = value.toLowerCase();
 		const arrayFilter = areaNamesData.filter((item) => {
@@ -31,7 +37,9 @@ const Search = ({ areaNamesData, handleSearch }) => {
 	}, [value, areaNamesData]);
 	return (
 		<form
-			id='container-search'
+			className={`container-search ${
+				isFocus ? 'search-show' : 'search-hidde'
+			}`}
 			autoComplete='off'
 			onSubmit={(e) => {
 				handleSearch(e);
@@ -50,7 +58,12 @@ const Search = ({ areaNamesData, handleSearch }) => {
 				></input>
 				<i className='bi bi-search'></i>
 			</div>
-			{isFocus ? <SuggestList filterData={filterData} /> : ''}
+			<SuggestList
+				filterData={filterData}
+				handleLink={handleLink}
+				isFocus={isFocus}
+				value={value}
+			/>
 		</form>
 	);
 };
