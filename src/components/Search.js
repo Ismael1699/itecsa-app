@@ -10,13 +10,12 @@ const Search = ({ areaNamesData, handleSearch }) => {
 	const handleChange = (e) => {
 		setValue(e.target.value);
 	};
-
 	const hadleFocus = () => {
 		setIsFocus(true);
 	};
 
 	const handleBlur = () => {
-		setIsFocus(false);
+		setTimeout(() => setIsFocus(false), 200);
 	};
 
 	const handleLink = (e) => {
@@ -58,12 +57,16 @@ const Search = ({ areaNamesData, handleSearch }) => {
 				></input>
 				<i className='bi bi-search'></i>
 			</div>
-			<SuggestList
-				filterData={filterData}
-				handleLink={handleLink}
-				isFocus={isFocus}
-				value={value}
-			/>
+			{isFocus && value.length > 0 ? (
+				<SuggestList
+					filterData={filterData}
+					handleLink={handleLink}
+					isFocus={isFocus}
+					value={value}
+				/>
+			) : (
+				''
+			)}
 		</form>
 	);
 };
