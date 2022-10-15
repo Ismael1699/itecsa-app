@@ -19,11 +19,15 @@ const Search = ({ areaNamesData, handleSearch }) => {
 	};
 
 	const handleLink = (e) => {
-		const content = e.target.text;
-		console.log('se presiono');
+		const content = e.target.innerText;
+		console.log(content);
 		setValue('');
+		handleSearch(content);
 	};
 
+	const dontRefresh = (e) => {
+		e.preventDefault();
+	};
 	useEffect(() => {
 		const valueLowerCase = value.toLowerCase();
 		const arrayFilter = areaNamesData.filter((item) => {
@@ -41,7 +45,8 @@ const Search = ({ areaNamesData, handleSearch }) => {
 			}`}
 			autoComplete='off'
 			onSubmit={(e) => {
-				handleSearch(e);
+				dontRefresh(e);
+				handleSearch(value);
 				setValue('');
 			}}
 		>

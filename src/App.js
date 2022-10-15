@@ -56,8 +56,24 @@ function App() {
 		setLoadPage('diesel');
 	};
 
-	const handleSearch = (e) => {
-		e.preventDefault();
+	const handleSearch = (text) => {
+		switch (text) {
+			case 'home':
+				homePage();
+				break;
+			case 'dashboard':
+				dashBoardPage();
+				break;
+			case 'avance':
+				avancePage();
+				break;
+			case 'estimaciones':
+				estimacionesPage();
+				break;
+			case 'diesel':
+				dieselPage();
+				break;
+		}
 	};
 
 	//Con este useEffect se obtine el ancho de la pantalla en todo el tiempo de ejecución del proyecto
