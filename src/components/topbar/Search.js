@@ -1,79 +1,77 @@
-import React, { useEffect, useState } from 'react';
-import '../styles/Search.css';
-import SuggestList from './SuggestList';
+import React, { useEffect, useState } from "react";
+import "../../styles/Search.css";
+import SuggestList from "./SuggestList";
 
 const Search = ({ areaNamesData, handleSearch }) => {
-	const [value, setValue] = useState('');
-	const [filterData, setFilterData] = useState([]);
-	const [isFocus, setIsFocus] = useState(false);
+    const [value, setValue] = useState("");
+    const [filterData, setFilterData] = useState([]);
+    const [isFocus, setIsFocus] = useState(false);
 
-	const handleChange = (e) => {
-		setValue(e.target.value);
-	};
-	const hadleFocus = () => {
-		setIsFocus(true);
-	};
+    const handleChange = (e) => {
+        setValue(e.target.value);
+    };
+    const hadleFocus = () => {
+        setIsFocus(true);
+    };
 
-	const handleBlur = () => {
-		setTimeout(() => setIsFocus(false), 200);
-	};
+    const handleBlur = () => {
+        setTimeout(() => setIsFocus(false), 200);
+    };
 
-	const handleLink = (e) => {
-		const content = e.target.innerText;
-		console.log(content);
-		setValue('');
-		handleSearch(content);
-	};
+    const handleLink = (e) => {
+        const content = e.target.innerText;
+        console.log(content);
+        setValue("");
+        handleSearch(content);
+    };
 
-	const dontRefresh = (e) => {
-		e.preventDefault();
-	};
-	useEffect(() => {
-		const valueLowerCase = value.toLowerCase();
-		const arrayFilter = areaNamesData.filter((item) => {
-			return valueLowerCase === ''
-				? false
-				: item.includes(valueLowerCase);
-		});
-		setFilterData(arrayFilter);
-	}, [value, areaNamesData]);
+    const dontRefresh = (e) => {
+        e.preventDefault();
+    };
+    useEffect(() => {
+        const valueLowerCase = value.toLowerCase();
+        const arrayFilter = areaNamesData.filter((item) => {
+            return valueLowerCase === ""
+                ? false
+                : item.includes(valueLowerCase);
+        });
+        setFilterData(arrayFilter);
+    }, [value, areaNamesData]);
 
-	return (
-		<form
-			className={`container-search ${
-				isFocus ? 'search-show' : 'search-hidde'
-			}`}
-			autoComplete='off'
-			onSubmit={(e) => {
-				dontRefresh(e);
-				handleSearch(value);
-				setValue('');
-			}}
-		>
-			<div className='container-input'>
-				<input
-					type='text'
-					className='input-search'
-					placeholder='¿A dónde quieres ir?'
-					value={value}
-					onChange={handleChange}
-					onFocus={hadleFocus}
-					onBlur={handleBlur}
-				></input>
-				<i className='bi bi-search'></i>
-			</div>
-			{isFocus && value.length > 0 ? (
-				<SuggestList
-					filterData={filterData}
-					handleLink={handleLink}
-					isFocus={isFocus}
-					value={value}
-				/>
-			) : (
-				''
-			)}
-		</form>
-	);
+    return (
+        <form
+            className={`container-search ${
+                isFocus ? "search-show" : "search-hidde"
+            }`}
+            autoComplete='off'
+            onSubmit={(e) => {
+                dontRefresh(e);
+                handleSearch(value);
+                setValue("");
+            }}>
+            <div className='container-input'>
+                <input
+                    type='text'
+                    className='input-search'
+                    placeholder='¿A dónde quieres ir?'
+                    value={value}
+                    onChange={handleChange}
+                    onFocus={hadleFocus}
+                    onBlur={handleBlur}></input>
+                <i className='bi bi-search'></i>
+            </div>
+            {isFocus && value.length > 0 ? (
+                <SuggestList
+                    filterData={filterData}
+                    handleLink={handleLink}
+                    isFocus={isFocus}
+                    value={value}
+                />
+            ) : (
+                ""
+            )}
+        </form>
+    );
 };
 
 export default Search;
