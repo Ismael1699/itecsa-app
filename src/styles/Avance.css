@@ -1,0 +1,17 @@
+.container-avance{
+    background-color: steelblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+
+.item-avance {
+    height: 100px;
+    width: 23%;
+    background-color: rgb(99, 96, 92);
+    margin: 0.5rem;
+}

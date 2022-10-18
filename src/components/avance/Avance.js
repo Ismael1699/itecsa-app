@@ -1,10 +1,29 @@
-import React from 'react';
+import React from "react";
+import "../../styles/Avance.css";
 
 const Avanve = () => {
     return (
-        <>
-            <h1>Este componente "Avance" aún esta en desarrollo...</h1>
-        </>
+        <div className='container-avance'>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+            <div className='item-avance'></div>
+        </div>
     );
 };
 
