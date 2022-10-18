@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -22,6 +24,8 @@ code {
   --main-color:#FFED4D; 
   --text-color: #675900;
   --secundary-color: #e2eb94;
+  --third-color:#9b915c98;
   --color-shadow:0;
   --border-color:#ada257;
+  --bg-color:#F2FEDC;
 }
