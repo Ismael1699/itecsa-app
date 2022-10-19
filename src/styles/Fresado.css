@@ -2,11 +2,19 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    background-color: crimson;
+    background-color: var(--third-color);
     animation: show 1s ;
 }
 
+.data-table{
+    width:100%;
+}
 
+.data-table td,th {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
 
 @keyframes show {
     0%{
