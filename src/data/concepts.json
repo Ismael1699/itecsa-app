@@ -1,0 +1,57 @@
+{
+    "concepts":[
+        {
+            "fresado":[
+                {
+                    "name":"Bacheo profundo",
+                    "unity":"m3",
+                    "price":"10000",
+                    "import":"1000000",
+                    "percetanje":"20"
+                },
+                {
+                    "name":"Carpeta 10cm",
+                    "unity":"m3",
+                    "price":"10000",
+                    "import":"1000000",
+                    "percetanje":"20"
+                },
+                {
+                    "name":"Bacheo",
+                    "unity":"m3",
+                    "price":"10000",
+                    "import":"1000000",
+                    "percetanje":"20"
+                },
+                {
+                    "name":"Bacheo superficial",
+                    "unity":"m3",
+                    "price":"10000",
+                    "import":"1000000",
+                    "percetanje":"20"
+                },
+                {
+                    "name":"suministro y aplicación",
+                    "unity":"m3",
+                    "price":"10000",
+                    "import":"1000000",
+                    "percetanje":"20"
+                },
+                {
+                    "name":"Renivelaciones",
+                    "unity":"m3",
+                    "price":"10000",
+                    "import":"1000000",
+                    "percetanje":"20"
+                },
+                {
+                    "name":"Alta fricción",
+                    "unity":"m3",
+                    "price":"10000",
+                    "import":"1000000",
+                    "percetanje":"20"
+                }
+            ]    
+        }
+    ] 
+}
