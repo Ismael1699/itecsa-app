@@ -1,30 +1,13 @@
 import React from "react";
 import "../../styles/Avance.css";
+import Conceptos from "./Conceptos";
 
-const Avanve = () => {
+const Avance = () => {
     return (
         <div className='container-avance'>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
-            <div className='item-avance'></div>
+            <Conceptos />
         </div>
     );
 };
 
-export default Avanve;
+export default Avance;
