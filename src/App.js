@@ -81,7 +81,7 @@ function App() {
         window.addEventListener("resize", getDisplaySize);
     });
     return (
-        <div id='app'>
+        <div className='background'>
             <div id='container-nav'>
                 <Nav
                     displayWidth={displayWidth}

@@ -5,21 +5,21 @@
                 {
                     "name":"Bacheo profundo",
                     "unity":"m3",
-                    "price":"10000",
+                    "price":10000,
                     "import":"1000000",
                     "percetanje":"20"
                 },
                 {
                     "name":"Carpeta 10cm",
                     "unity":"m3",
-                    "price":"10000",
+                    "price":250185,
                     "import":"1000000",
                     "percetanje":"20"
                 },
                 {
                     "name":"Bacheo",
                     "unity":"m3",
-                    "price":"10000",
+                    "price":345712,
                     "import":"1000000",
                     "percetanje":"20"
                 },

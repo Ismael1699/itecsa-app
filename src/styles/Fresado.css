@@ -3,18 +3,74 @@
     width: 100%;
     border-radius: 20px;
     background-color: var(--third-color);
-    animation: show 1s ;
+    animation: show 1s;
+    display: flex;
+    flex-direction: column;
 }
 
-.data-table{
-    width:100%;
+.container-header{
+    width: 100%;
+    height: 15%;
+}
+.data-container{
+    width: 100%;
+    padding-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
 }
 
-.data-table td,th {
+
+.data-concept{
+    height: 6rem;
     border-radius: 10px;
-    border: 1px solid #ccc;
-    text-align: left;
+    margin: 1%;
+    width: 46%;
+    background-color: springgreen;
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "name name meta meta"
+            ". . metaNumber metaNumber"
+            "price barProgres barProgres barProgres";
+    gap: 1px;
 }
+
+
+.price {
+    
+    grid-area: price;
+    background-color: blueviolet;
+}
+
+.name {
+    padding-top: 10px;
+    padding-left: 10px;
+    grid-area: name;
+    font-size: 18px;
+    background-color: darkblue;
+}
+
+.meta {
+    grid-area: meta;
+    background-color: rgb(0, 151, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barProgres {
+    grid-area: barProgres;
+    background-color: rgb(216, 17, 173);
+}
+
+.metaNumber {
+    grid-area: metaNumber;
+    background-color: rgb(194, 182, 20);
+}
+
 
 @keyframes show {
     0%{
