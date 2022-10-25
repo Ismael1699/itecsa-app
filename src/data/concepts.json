@@ -7,49 +7,49 @@
                     "unity":"m3",
                     "price":10000,
                     "import":"1000000",
-                    "percetanje":"20"
+                    "percetanje":"50"
                 },
                 {
                     "name":"Carpeta 10cm",
                     "unity":"m3",
-                    "price":250185,
+                    "price":250185.58,
                     "import":"1000000",
-                    "percetanje":"20"
+                    "percetanje":"25"
                 },
                 {
                     "name":"Bacheo",
                     "unity":"m3",
                     "price":345712,
                     "import":"1000000",
-                    "percetanje":"20"
+                    "percetanje":"10"
                 },
                 {
                     "name":"Bacheo superficial",
                     "unity":"m3",
-                    "price":"10000",
+                    "price":123456,
                     "import":"1000000",
-                    "percetanje":"20"
+                    "percetanje":"90"
                 },
                 {
                     "name":"suministro y aplicación",
                     "unity":"m3",
-                    "price":"10000",
+                    "price":6453823,
                     "import":"1000000",
-                    "percetanje":"20"
+                    "percetanje":"33"
                 },
                 {
                     "name":"Renivelaciones",
                     "unity":"m3",
-                    "price":"10000",
+                    "price":18671232,
                     "import":"1000000",
-                    "percetanje":"20"
+                    "percetanje":"45"
                 },
                 {
                     "name":"Alta fricción",
                     "unity":"m3",
-                    "price":"10000",
+                    "price":1836748,
                     "import":"1000000",
-                    "percetanje":"20"
+                    "percetanje":"15"
                 }
             ]    
         }

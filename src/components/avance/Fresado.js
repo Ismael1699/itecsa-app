@@ -1,6 +1,24 @@
 import React from "react";
 import "../../styles/Fresado.css";
 import data from "../../data/concepts.json";
+import styled from "styled-components";
+
+const BarProgress = styled.div`
+    width: 60%;
+    height: 30%;
+    background-color: #6b554a;
+    overflow: hidden;
+    border-radius: 10px;
+    &::before {
+        content: "";
+        display: block;
+        width: ${(props) => "" + props.percentaje}%;
+        height: 100%;
+        background-color: #00ad34;
+        z-index: 3;
+        border-radius: 10px;
+    }
+`;
 
 const Fresado = ({ handleBack }) => {
     return (
@@ -22,9 +40,16 @@ const Fresado = ({ handleBack }) => {
                             </div>
                             <div className='metaNumber'>{item.import}</div>
                             <div className='price'>
-                                {item.price.toLocaleString("en")}
+                                {Intl.NumberFormat("es-MX", {
+                                    style: "currency",
+                                    currency: "MXN",
+                                    minimumFractionDigits: 2,
+                                    maximumFractionDigits: 2,
+                                }).format(item.price)}
                             </div>
-                            <div className='barProgres'>{item.percetanje}</div>
+                            <div className='barProgres'>
+                                <BarProgress percentaje={item.percetanje} />
+                            </div>
                         </div>
                     );
                 })}

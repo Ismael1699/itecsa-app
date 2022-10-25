@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    background-color: var(--third-color);
+    
     animation: show 1s;
     display: flex;
     flex-direction: column;
@@ -17,16 +17,21 @@
     padding-left: 2%;
     display: flex;
     flex-wrap: wrap;
-    background-color: brown;
+    color: white;
+    font-weight:500;
 }
 
 
 .data-concept{
     height: 6rem;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 1%;
+    padding-bottom: 0.5rem;
     width: 46%;
-    background-color: springgreen;
+    background-color: var(--third-color);
+
+
+
     display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -36,13 +41,13 @@
             ". . metaNumber metaNumber"
             "price barProgres barProgres barProgres";
     gap: 1px;
+
 }
 
 
 .price {
-    
+    padding-left: 10px;
     grid-area: price;
-    background-color: blueviolet;
 }
 
 .name {
@@ -50,12 +55,10 @@
     padding-left: 10px;
     grid-area: name;
     font-size: 18px;
-    background-color: darkblue;
 }
 
 .meta {
     grid-area: meta;
-    background-color: rgb(0, 151, 45);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,12 +66,15 @@
 
 .barProgres {
     grid-area: barProgres;
-    background-color: rgb(216, 17, 173);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 
 .metaNumber {
     grid-area: metaNumber;
-    background-color: rgb(194, 182, 20);
 }
 
 
