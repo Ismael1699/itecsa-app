@@ -14,7 +14,7 @@ const BarProgress = styled.div`
         display: block;
         width: ${(props) => "" + props.percentaje}%;
         height: 100%;
-        background-color: #00ad34;
+        background-color: #2fff24;
         z-index: 3;
         border-radius: 10px;
     }
@@ -38,7 +38,11 @@ const Fresado = ({ handleBack }) => {
                             <div className='meta'>
                                 <p>Meta</p>
                             </div>
-                            <div className='metaNumber'>{item.import}</div>
+                            <div className='metaImport'>{item.import}</div>
+                            <div className='metaVol'>
+                                {item.vol.toLocaleString("es-MX")} m<sup>3</sup>
+                            </div>
+                            <div className='namePrice'>Precio por unidad</div>
                             <div className='price'>
                                 {Intl.NumberFormat("es-MX", {
                                     style: "currency",

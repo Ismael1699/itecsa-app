@@ -2,7 +2,6 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    
     animation: show 1s;
     display: flex;
     flex-direction: column;
@@ -19,6 +18,7 @@
     flex-wrap: wrap;
     color: white;
     font-weight:500;
+    overflow-y: scroll;
 }
 
 
@@ -33,28 +33,37 @@
 
 
     display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1.3fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 0px 0px;
         grid-template-areas:
             "name name meta meta"
-            ". . metaNumber metaNumber"
+            "namePrice . metaVol metaImport"
             "price barProgres barProgres barProgres";
     gap: 1px;
 
 }
 
+.namePrice{
+    grid-area: namePrice;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+}
 
 .price {
-    padding-left: 10px;
+    padding-left: 15px;
     grid-area: price;
+    display: flex;
+    justify-content: center;
 }
 
 .name {
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 15px;
     grid-area: name;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .meta {
@@ -68,13 +77,22 @@
     grid-area: barProgres;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
     
     
 }
 
-.metaNumber {
-    grid-area: metaNumber;
+.metaImport {
+    grid-area: metaImport;
+    display: flex;
+    justify-content: center;
+}
+
+.metaVol {
+    grid-area: metaVol;
+    display: flex;
+    justify-content: center;
 }
 
 
