@@ -6,50 +6,57 @@
                     "name":"Bacheo profundo",
                     "unity":"m3",
                     "price":10000,
-                    "import":"1000000",
-                    "percetanje":"50"
+                    "vol": 3201231,
+                    "import":1000000,
+                    "percetanje":50
                 },
                 {
                     "name":"Carpeta 10cm",
                     "unity":"m3",
                     "price":250185.58,
-                    "import":"1000000",
-                    "percetanje":"25"
+                    "vol": 1236155,
+                    "import":1000000,
+                    "percetanje":25
                 },
                 {
                     "name":"Bacheo",
                     "unity":"m3",
                     "price":345712,
-                    "import":"1000000",
-                    "percetanje":"10"
+                    "vol":12823673,
+                    "import":1000000,
+                    "percetanje":10
                 },
                 {
                     "name":"Bacheo superficial",
                     "unity":"m3",
                     "price":123456,
-                    "import":"1000000",
-                    "percetanje":"90"
+                    "vol": 4573456,
+                    "import":1000000,
+                    "percetanje":90
                 },
                 {
                     "name":"suministro y aplicación",
                     "unity":"m3",
                     "price":6453823,
-                    "import":"1000000",
-                    "percetanje":"33"
+                    "vol":129374,
+                    "import":1000000,
+                    "percetanje":33
                 },
                 {
                     "name":"Renivelaciones",
                     "unity":"m3",
                     "price":18671232,
-                    "import":"1000000",
-                    "percetanje":"45"
+                    "vol":4574639,
+                    "import":1000000,
+                    "percetanje":45
                 },
                 {
                     "name":"Alta fricción",
                     "unity":"m3",
                     "price":1836748,
-                    "import":"1000000",
-                    "percetanje":"15"
+                    "vol":13745656,
+                    "import":1000000,
+                    "percetanje":15
                 }
             ]    
         }
