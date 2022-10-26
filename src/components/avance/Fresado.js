@@ -31,7 +31,7 @@ const Fresado = ({ handleBack }) => {
                 <h1>Fresado</h1>
             </div>
             <div className='data-container'>
-                {data.concepts[0].fresado.map((item) => {
+                {data.fresado.subconceptos.map((item) => {
                     return (
                         <div className='data-concept'>
                             <div className='name'>{item.name}</div>

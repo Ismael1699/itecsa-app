@@ -1,5 +1,11 @@
 {
-    "fresado":[
+    "fresado":{
+        "general":{
+            "avance":10384328,
+            "percentaje": 75,
+            "meta":15000000
+            },
+        "subconceptos":[
         {
             "name":"Bacheo profundo",
             "unity":"m3",
@@ -56,71 +62,78 @@
             "import":1000000,
             "percetanje":15
         }
-    ],
-    
-    "terracerias":[{
-        "name":"Desmonte",
-        "unity":"ha",
-        "price":10152.91,
-        "vol":66.60,
-        "import":676183.81,
-        "percentaje":20
+    ]
     },
-    {
-        "name":"Despalme",
-        "unity":"m3",
-        "price":8.53,
-        "vol":30557,
-        "import":260651.21,
-        "percentaje":30
-    },
-    {
-        "name":"Cortes aproveche",
-        "unity":"m3",
-        "price":37.87,
-        "vol":11168,
-        "import":422932.16,
-        "percentaje":50
-    },
-    {
-        "name":"Cortes desaproveche",
-        "unity":"m3",
-        "price":43.48,
-        "vol":173320,
-        "import":75316056,
-        "percentaje":80
-    },
-    {
-        "name":"Cortes en cajas",
-        "unity":"m3",
-        "price":40.27,
-        "vol":10020,
-        "import":403505.40,
-        "percentaje":15
-    },
-    {
-        "name":"cortes estructura desaproveche",
-        "unity":"m3",
-        "price":40.03,
-        "vol":25288.06,
-        "import":1012281.04,
-        "percentaje":90
-    },
-    {
-        "name":"pedraplen",
-        "unity":"m3",
-        "price":388.56,
-        "vol":34897,
-        "import":13559578.32,
-        "percentaje":26
-    },
-    {
-        "name":"Cuerpo compactación",
-        "unity":"m3",
-        "price":93.70,
-        "vol":148324.8,
-        "import": 13898033.78,
-        "percentaje":5
+    "terracerias":{
+        "general":{
+            "avance":10384328,
+            "percentaje": 75,
+            "meta":15000000
+        },
+        "subconceptos":[{
+            "name":"Desmonte",
+            "unity":"ha",
+            "price":10152.91,
+            "vol":66.60,
+            "import":676183.81,
+            "percentaje":20
+        },
+        {
+            "name":"Despalme",
+            "unity":"m3",
+            "price":8.53,
+            "vol":30557,
+            "import":260651.21,
+            "percentaje":30
+        },
+        {
+            "name":"Cortes aproveche",
+            "unity":"m3",
+            "price":37.87,
+            "vol":11168,
+            "import":422932.16,
+            "percentaje":50
+        },
+        {
+            "name":"Cortes desaproveche",
+            "unity":"m3",
+            "price":43.48,
+            "vol":173320,
+            "import":75316056,
+            "percentaje":80
+        },
+        {
+            "name":"Cortes en cajas",
+            "unity":"m3",
+            "price":40.27,
+            "vol":10020,
+            "import":403505.40,
+            "percentaje":15
+        },
+        {
+            "name":"cortes estructura desaproveche",
+            "unity":"m3",
+            "price":40.03,
+            "vol":25288.06,
+            "import":1012281.04,
+            "percentaje":90
+        },
+        {
+            "name":"pedraplen",
+            "unity":"m3",
+            "price":388.56,
+            "vol":34897,
+            "import":13559578.32,
+            "percentaje":26
+        },
+        {
+            "name":"Cuerpo compactación",
+            "unity":"m3",
+            "price":93.70,
+            "vol":148324.8,
+            "import": 13898033.78,
+            "percentaje":5
+        }
+    ]
     }
-]
 }
