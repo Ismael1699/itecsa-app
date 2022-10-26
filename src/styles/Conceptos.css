@@ -20,9 +20,22 @@
     transition: transform 0.5s;
     margin: 0.5rem;
     overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "concept concept concept"
+        "avance actual meta"
+        "barraAvance actualNumber metaNumber"
+        "proximos proximos proximos"
+        "subconcepto1 cirBar1 price1"
+        "subconcepto2 cirBar2 price2";
 }
 
-.item-avance:hover {
+.item-avance:hover { 
     transform: scale(1.05);
     transition: all 0.5s;
 }
@@ -37,4 +50,63 @@
         
     }
 
+}
+
+
+
+
+.concept {
+    grid-area: concept;
+}
+
+.avance {
+    grid-area: avance;
+}
+
+.actual {
+    grid-area: actual;
+}
+
+.meta {
+    grid-area: meta;
+}
+
+.barraAvance {
+    grid-area: barraAvance;
+}
+
+.actualNumber {
+    grid-area: actualNumber;
+}
+
+.metaNumber {
+    grid-area: metaNumber;
+}
+
+.proximos {
+    grid-area: proximos;
+}
+
+.subconcepto1 {
+    grid-area: subconcepto1;
+}
+
+.subconcepto2 {
+    grid-area: subconcepto2;
+}
+
+.cirBar1 {
+    grid-area: cirBar1;
+}
+
+.cirBar2 {
+    grid-area: cirBar2;
+}
+
+.price1 {
+    grid-area: price1;
+}
+
+.price2 {
+    grid-area: price2;
 }

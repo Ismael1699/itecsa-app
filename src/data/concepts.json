@@ -1,64 +1,126 @@
 {
-    "concepts":[
+    "fresado":[
         {
-            "fresado":[
-                {
-                    "name":"Bacheo profundo",
-                    "unity":"m3",
-                    "price":10000,
-                    "vol": 3201231,
-                    "import":1000000,
-                    "percetanje":50
-                },
-                {
-                    "name":"Carpeta 10cm",
-                    "unity":"m3",
-                    "price":250185.58,
-                    "vol": 1236155,
-                    "import":1000000,
-                    "percetanje":25
-                },
-                {
-                    "name":"Bacheo",
-                    "unity":"m3",
-                    "price":345712,
-                    "vol":12823673,
-                    "import":1000000,
-                    "percetanje":10
-                },
-                {
-                    "name":"Bacheo superficial",
-                    "unity":"m3",
-                    "price":123456,
-                    "vol": 4573456,
-                    "import":1000000,
-                    "percetanje":90
-                },
-                {
-                    "name":"suministro y aplicación",
-                    "unity":"m3",
-                    "price":6453823,
-                    "vol":129374,
-                    "import":1000000,
-                    "percetanje":33
-                },
-                {
-                    "name":"Renivelaciones",
-                    "unity":"m3",
-                    "price":18671232,
-                    "vol":4574639,
-                    "import":1000000,
-                    "percetanje":45
-                },
-                {
-                    "name":"Alta fricción",
-                    "unity":"m3",
-                    "price":1836748,
-                    "vol":13745656,
-                    "import":1000000,
-                    "percetanje":15
-                }
-            ]    
+            "name":"Bacheo profundo",
+            "unity":"m3",
+            "price":10000,
+            "vol": 3201231,
+            "import":1000000,
+            "percetanje":50
+        },
+        {
+            "name":"Carpeta 10cm",
+            "unity":"m3",
+            "price":250185.58,
+            "vol": 1236155,
+            "import":1000000,
+            "percetanje":25
+        },
+        {
+            "name":"Bacheo",
+            "unity":"m3",
+            "price":345712,
+            "vol":12823673,
+            "import":1000000,
+            "percetanje":10
+        },
+        {
+            "name":"Bacheo superficial",
+            "unity":"m3",
+            "price":123456,
+            "vol": 4573456,
+            "import":1000000,
+            "percetanje":90
+        },
+        {
+            "name":"suministro y aplicación",
+            "unity":"m3",
+            "price":6453823,
+            "vol":129374,
+            "import":1000000,
+            "percetanje":33
+        },
+        {
+            "name":"Renivelaciones",
+            "unity":"m3",
+            "price":18671232,
+            "vol":4574639,
+            "import":1000000,
+            "percetanje":45
+        },
+        {
+            "name":"Alta fricción",
+            "unity":"m3",
+            "price":1836748,
+            "vol":13745656,
+            "import":1000000,
+            "percetanje":15
         }
-    ] 
+    ],
+    
+    "terracerias":[{
+        "name":"Desmonte",
+        "unity":"ha",
+        "price":10152.91,
+        "vol":66.60,
+        "import":676183.81,
+        "percentaje":20
+    },
+    {
+        "name":"Despalme",
+        "unity":"m3",
+        "price":8.53,
+        "vol":30557,
+        "import":260651.21,
+        "percentaje":30
+    },
+    {
+        "name":"Cortes aproveche",
+        "unity":"m3",
+        "price":37.87,
+        "vol":11168,
+        "import":422932.16,
+        "percentaje":50
+    },
+    {
+        "name":"Cortes desaproveche",
+        "unity":"m3",
+        "price":43.48,
+        "vol":173320,
+        "import":75316056,
+        "percentaje":80
+    },
+    {
+        "name":"Cortes en cajas",
+        "unity":"m3",
+        "price":40.27,
+        "vol":10020,
+        "import":403505.40,
+        "percentaje":15
+    },
+    {
+        "name":"cortes estructura desaproveche",
+        "unity":"m3",
+        "price":40.03,
+        "vol":25288.06,
+        "import":1012281.04,
+        "percentaje":90
+    },
+    {
+        "name":"pedraplen",
+        "unity":"m3",
+        "price":388.56,
+        "vol":34897,
+        "import":13559578.32,
+        "percentaje":26
+    },
+    {
+        "name":"Cuerpo compactación",
+        "unity":"m3",
+        "price":93.70,
+        "vol":148324.8,
+        "import": 13898033.78,
+        "percentaje":5
+    }
+]
 }
