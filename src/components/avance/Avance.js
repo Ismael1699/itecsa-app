@@ -8,6 +8,7 @@ const Avance = () => {
 
     const handleClick = (e) => {
         setWhatConcepto(e.target.id);
+        console.log(e.target.id);
     };
 
     const handleBack = () => {
@@ -16,8 +17,8 @@ const Avance = () => {
 
     return (
         <div className='container-avance'>
-            {whatConcepto === "fresado" ? (
-                <Fresado handleBack={handleBack} />
+            {whatConcepto === "fresado" || whatConcepto === "terracerias" ? (
+                <Fresado handleBack={handleBack} whatConcepto={whatConcepto} />
             ) : (
                 ""
             )}

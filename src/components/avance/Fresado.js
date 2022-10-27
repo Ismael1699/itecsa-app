@@ -20,7 +20,8 @@ const BarProgress = styled.div`
     }
 `;
 
-const Fresado = ({ handleBack }) => {
+const Fresado = ({ handleBack, whatConcepto }) => {
+    console.log(whatConcepto);
     return (
         <div className='container-fresado'>
             <div className='container-header'>
@@ -31,9 +32,9 @@ const Fresado = ({ handleBack }) => {
                 <h1>Fresado</h1>
             </div>
             <div className='data-container'>
-                {data.fresado.subconceptos.map((item) => {
+                {data[whatConcepto].subconceptos.map((item, key) => {
                     return (
-                        <div className='data-concept'>
+                        <div className='data-concept' key={key + 1}>
                             <div className='name'>{item.name}</div>
                             <div className='meta'>
                                 <p>Meta</p>
