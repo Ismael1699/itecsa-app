@@ -17,7 +17,7 @@ const Avance = () => {
 
     return (
         <div className='container-avance'>
-            {whatConcepto === "fresado" || whatConcepto === "terracerias" ? (
+            {whatConcepto.length > 0 ? (
                 <Subconceptos
                     handleBack={handleBack}
                     whatConcepto={whatConcepto}
