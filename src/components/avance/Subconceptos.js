@@ -24,6 +24,7 @@ const SubConceptos = ({ handleBack, whatConcepto }) => {
     console.log(whatConcepto);
     return (
         <div className='container-fresado'>
+            {/* div para la informacion del encabezado del concepto generado */}
             <div className='container-header'>
                 <button onClick={handleBack}>{"Back"}</button>
                 <button>SubConceptos</button>
@@ -31,6 +32,7 @@ const SubConceptos = ({ handleBack, whatConcepto }) => {
                 <button>Vista por mes</button>
                 <h1>Fresado</h1>
             </div>
+            {/* div para la generacion automatica de cada subconceptos */}
             <div className='data-container'>
                 {data[whatConcepto].subconceptos.map((item, key) => {
                     return (

@@ -3,6 +3,7 @@ import "../../styles/Conceptos.css";
 import data from "../../data/concepts.json";
 
 const Conceptos = ({ handleClick }) => {
+    // el siguiente bucle y array me permiten generar elementos jsx de forma automatica segun el tamaño de los datos
     let arrConcepts = [];
     for (let keys in data) {
         arrConcepts.push(

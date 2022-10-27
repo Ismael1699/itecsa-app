@@ -17,6 +17,9 @@ const Avance = () => {
 
     return (
         <div className='container-avance'>
+            {/* los dos contenedores siguientes me permiten desaparecer o aparecer segun el estado de este si 
+            no es presionado nada el valor de whatConcepto es "" pero si es presionado algun concepto el valor 
+            de esta variable de estado sera el valor del concepto presionado */}
             {whatConcepto.length > 0 ? (
                 <Subconceptos
                     handleBack={handleBack}
