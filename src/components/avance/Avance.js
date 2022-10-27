@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/Avance.css";
 import Conceptos from "./Conceptos";
-import Fresado from "./Fresado";
+import Subconceptos from "./Subconceptos";
 
 const Avance = () => {
     const [whatConcepto, setWhatConcepto] = useState("");
@@ -18,7 +18,10 @@ const Avance = () => {
     return (
         <div className='container-avance'>
             {whatConcepto === "fresado" || whatConcepto === "terracerias" ? (
-                <Fresado handleBack={handleBack} whatConcepto={whatConcepto} />
+                <Subconceptos
+                    handleBack={handleBack}
+                    whatConcepto={whatConcepto}
+                />
             ) : (
                 ""
             )}
