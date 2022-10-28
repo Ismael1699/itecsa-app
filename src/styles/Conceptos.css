@@ -24,13 +24,14 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "concept concept concept"
-        "avance actual meta"
-        "barraAvance actualNumber metaNumber"
+        "actual meta meta"
+        "actualNumber metaNumber metaNumber"
+        "barraAvance barraAvance barraAvance"
         "proximos proximos proximos"
         "subconcepto1 cirBar1 price1"
         "subconcepto2 cirBar2 price2";
@@ -38,7 +39,6 @@
 
 @media screen and (max-width: 1088px) and (min-width: 900px){
     .item-avance{
-        background-color: blueviolet;
         width: 30%;
         height: 11rem;
     }
@@ -46,7 +46,6 @@
 
 @media screen and (max-width: 899px) and (min-width:700px){
     .item-avance{
-        background-color: rgb(255, 0, 0);
         width: 45%;
         height: 11rem;
     }
@@ -54,7 +53,6 @@
 
 @media screen and (max-width: 699px){
     .item-avance {
-            background-color: rgb(19, 80, 170);
             width: 90%;
             height: 11rem;
         }
@@ -89,19 +87,10 @@
     font-size: 18px;
 }
 
-.avance {
-    grid-area: avance;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-}
 
 .actual {
     grid-area: actual;
     font-size: 12px;
-    background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +99,6 @@
 .metaGeneral {
     grid-area: meta;
     font-size: 12px;
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,16 +106,15 @@
 
 .barraAvance {
     grid-area: barraAvance;
-    background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }
 
 .actualNumber {
     grid-area: actualNumber;
     font-size: 12px;
-    background-color: tan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +123,6 @@
 .metaNumber {
     grid-area: metaNumber;
     font-size: 12px;
-    background-color: chocolate;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +131,6 @@
 .proximos {
     font-size: 12px;
     grid-area: proximos;
-    background-color: tomato;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +138,6 @@
 
 .subconcepto1 {
     grid-area: subconcepto1;
-    background-color: violet;
 }
 
 .subconcepto2 {
