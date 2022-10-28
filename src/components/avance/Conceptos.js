@@ -23,6 +23,7 @@ const BarProgressGeneral = styled.div`
 const Conceptos = ({ handleClick }) => {
     // el siguiente bucle y array me permiten generar elementos jsx de forma automatica segun el tamaño de los datos
     let arrConcepts = [];
+
     const moneda = Intl.NumberFormat("es-MX", {
         style: "currency",
         currency: "MXN",
@@ -51,12 +52,16 @@ const Conceptos = ({ handleClick }) => {
                     {moneda.format(data[keys].general.meta)}
                 </div>
                 <div className='proximos'>proximos</div>
-                <div className='subconceptos1'></div>
-                <div className='cirbar1'></div>
-                <div className='price1'></div>
-                <div className='subconceptos2'></div>
-                <div className='cirbar2'></div>
-                <div className='price2'></div>
+                <div className='subconceptos1'>
+                    {data[keys].general.prox[0].name}
+                </div>
+                <div className='cirbar1'>bar</div>
+                <div className='price1'>{data[keys].general.prox[0].meta}</div>
+                <div className='subconceptos2'>
+                    {data[keys].general.prox[1].name}
+                </div>
+                <div className='cirbar2'>bar</div>
+                <div className='price2'>{data[keys].general.prox[1].meta}</div>
             </div>
         );
     }
