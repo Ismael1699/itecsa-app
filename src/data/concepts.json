@@ -3,15 +3,24 @@
         "general":{
             "avance":10384328,
             "percentaje": 75,
-            "meta":15000000
-            },
+            "meta":15000000,
+            "prox":[{
+                "name":"Bacheo superficial",
+                "percentaje":90,
+                "meta":1000000
+            },{
+                "name":"Bacheo profundo",
+                "percentaje":50,
+                "meta":1110645
+            }] 
+        },
         "subconceptos":[
         {
             "name":"Bacheo profundo",
             "unity":"m3",
             "price":10000,
             "vol": 3201231,
-            "import":1000000,
+            "import":1110645,
             "percetanje":50
         },
         {
@@ -68,7 +77,16 @@
         "general":{
             "avance":10384328,
             "percentaje": 75,
-            "meta":15000000
+            "meta":15000000,
+            "prox":[{
+                "name":"Cortes estructura desaproveche",
+                "percentaje":90,
+                "meta":1012281.04
+            },{
+                "name":"Cortes desaproveche",
+                "percentaje":80,
+                "meta":75316056
+            }] 
         },
         "subconceptos":[{
             "name":"Desmonte",

@@ -51,6 +51,12 @@ const Conceptos = ({ handleClick }) => {
                     {moneda.format(data[keys].general.meta)}
                 </div>
                 <div className='proximos'>proximos</div>
+                <div className='subconceptos1'></div>
+                <div className='cirbar1'></div>
+                <div className='price1'></div>
+                <div className='subconceptos2'></div>
+                <div className='cirbar2'></div>
+                <div className='price2'></div>
             </div>
         );
     }
