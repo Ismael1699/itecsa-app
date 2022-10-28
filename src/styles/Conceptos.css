@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     display: flex;
+    
     flex-wrap: wrap;
     overflow-y: scroll;
     padding-top: 0.5rem;
@@ -10,8 +11,9 @@
 }
 
 .item-avance {
-    height: 30%;
+    height: 11rem;
     width: 23%;
+    color:white;
     background: var(--third-color);
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -20,9 +22,8 @@
     transition: transform 0.5s;
     margin: 0.5rem;
     overflow: hidden;
-
     display: grid;
-    grid-template-columns: 2.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -34,6 +35,31 @@
         "subconcepto1 cirBar1 price1"
         "subconcepto2 cirBar2 price2";
 }
+
+@media screen and (max-width: 1088px) and (min-width: 900px){
+    .item-avance{
+        background-color: blueviolet;
+        width: 30%;
+        height: 11rem;
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width:700px){
+    .item-avance{
+        background-color: rgb(255, 0, 0);
+        width: 45%;
+        height: 11rem;
+    }
+}
+
+@media screen and (max-width: 699px){
+    .item-avance {
+            background-color: rgb(19, 80, 170);
+            width: 90%;
+            height: 11rem;
+        }
+}
+
 
 .item-avance:hover { 
     transform: scale(1.05);
@@ -57,46 +83,87 @@
 
 .concept {
     grid-area: concept;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
 }
 
 .avance {
     grid-area: avance;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
 }
 
 .actual {
     grid-area: actual;
+    font-size: 12px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.meta {
+.metaGeneral {
     grid-area: meta;
+    font-size: 12px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .barraAvance {
     grid-area: barraAvance;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .actualNumber {
     grid-area: actualNumber;
+    font-size: 12px;
+    background-color: tan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .metaNumber {
     grid-area: metaNumber;
+    font-size: 12px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .proximos {
+    font-size: 12px;
     grid-area: proximos;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .subconcepto1 {
     grid-area: subconcepto1;
+    background-color: violet;
 }
 
 .subconcepto2 {
     grid-area: subconcepto2;
+    background-color: cadetblue;
 }
 
 .cirBar1 {
     grid-area: cirBar1;
+    background-color: crimson;
 }
 
 .cirBar2 {
