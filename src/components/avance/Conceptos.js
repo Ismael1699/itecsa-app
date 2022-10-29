@@ -4,7 +4,7 @@ import data from "../../data/concepts.json";
 import styled from "styled-components";
 
 const BarProgressGeneral = styled.div`
-    width: 60%;
+    width: 70%;
     height: 30%;
     background-color: #6b554a;
     overflow: hidden;
@@ -46,22 +46,26 @@ const Conceptos = ({ handleClick }) => {
                     />
                 </div>
                 <div className='actualNumber'>
-                    {moneda.format(data[keys].general.avance)}
+                    <span>{moneda.format(data[keys].general.avance)}</span>
                 </div>
                 <div className='metaNumber'>
-                    {moneda.format(data[keys].general.meta)}
+                    <span>{moneda.format(data[keys].general.meta)}</span>
                 </div>
                 <div className='proximos'>proximos</div>
-                <div className='subconceptos1'>
-                    {data[keys].general.prox[0].name}
+                <div className='subconcepto1'>
+                    <span>{data[keys].general.prox[0].name}</span>
                 </div>
-                <div className='cirbar1'>bar</div>
-                <div className='price1'>{data[keys].general.prox[0].meta}</div>
-                <div className='subconceptos2'>
-                    {data[keys].general.prox[1].name}
+                <div className='cirbar1'></div>
+                <div className='price1'>
+                    <span>{data[keys].general.prox[0].meta}</span>
                 </div>
-                <div className='cirbar2'>bar</div>
-                <div className='price2'>{data[keys].general.prox[1].meta}</div>
+                <div className='subconcepto2'>
+                    <span>{data[keys].general.prox[1].name}</span>
+                </div>
+                <div className='cirbar2'></div>
+                <div className='price2'>
+                    <span>{data[keys].general.prox[1].meta}</span>
+                </div>
             </div>
         );
     }
