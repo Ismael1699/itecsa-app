@@ -155,13 +155,18 @@
     overflow: hidden;
 }
 
-.cirBar1 {
+.cirbar1 {
     grid-area: cirBar1;
-    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cirBar2 {
+.cirbar2 {
     grid-area: cirBar2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .price1 {

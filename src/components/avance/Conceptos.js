@@ -20,6 +20,22 @@ const BarProgressGeneral = styled.div`
     }
 `;
 
+const CirBar = styled.div`
+    width: 100%;
+    height: 30%;
+    background-color: #6b554a;
+    overflow: hidden;
+    &::before {
+        content: "";
+        display: block;
+        width: ${(props) => "" + props.percentaje}%;
+        height: 100%;
+        background-color: #2fff24;
+        z-index: 3;
+        border-radius: 10px;
+    }
+`;
+
 const Conceptos = ({ handleClick }) => {
     // el siguiente bucle y array me permiten generar elementos jsx de forma automatica segun el tamaño de los datos
     let arrConcepts = [];
@@ -55,14 +71,22 @@ const Conceptos = ({ handleClick }) => {
                 <div className='subconcepto1'>
                     <span>{data[keys].general.prox[0].name}</span>
                 </div>
-                <div className='cirbar1'></div>
+                <div className='cirbar1'>
+                    <CirBar
+                        percentaje={data[keys].general.prox[0].percentaje}
+                    />
+                </div>
                 <div className='price1'>
                     <span>{data[keys].general.prox[0].meta}</span>
                 </div>
                 <div className='subconcepto2'>
                     <span>{data[keys].general.prox[1].name}</span>
                 </div>
-                <div className='cirbar2'></div>
+                <div className='cirbar2'>
+                    <CirBar
+                        percentaje={data[keys].general.prox[1].percentaje}
+                    />
+                </div>
                 <div className='price2'>
                     <span>{data[keys].general.prox[1].meta}</span>
                 </div>
